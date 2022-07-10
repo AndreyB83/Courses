@@ -1,4 +1,4 @@
-#задан список:
+# задан список:
 _list = [12, 87, 99, 11]
 num_min = min(_list)
 num_max = max(_list)
