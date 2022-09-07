@@ -10,27 +10,27 @@ class Math:
         self.a = a
         self.b = b
 
-    def addition(self, a, b):
-        return print(a + b)
+    def addition(self):
+        return self.a + self.b
 
-    def multiplication(self, a, b):
-        return print(a * b)
+    def multiplication(self):
+        return self.a * self.b
 
-    def division(self, a, b):
+    def division(self):
  #       try:
  #           if b == 0
  #       except ZeroDivisionError as e:
  #       print(e)
-        return print(a / b)
+        return self.a / self.b
 
-    def subtraction(self, a, b):
-        return print(a - b)
+    def subtraction(self):
+        return self.a - self.b
 
 
 # выводим результат:
 
-math = Math('a', 'b')
-math.addition(2, 3)
-math.multiplication(5, 8)
-math.division(4, 8)
-math.subtraction(6, 9)
+math = Math(5, 8)
+print(math.addition())
+print(math.multiplication())
+print(math.division())
+print(math.subtraction())

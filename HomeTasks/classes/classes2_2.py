@@ -15,26 +15,26 @@ class Car:
         self.year = year
 
     def turn_on(self):
-        return print(f"Автомобиль заведен")
+        return f"Автомобиль заведен"
 
     def turn_off(self):
-        return print(f"Автомобиль заглушен")
+        return f"Автомобиль заглушен"
 
     def get_year(self):
-        return print(f"Год выпуска авто: {self.year}")
+        return f"Год выпуска авто: {self.year}"
 
     def get_type(self):
-        return print(f"Марка авто: {self.type}")
+        return f"Марка авто: {self.type}"
 
     def get_color(self):
-        return print(f"Цвет авто: {self.color}")
+        return f"Цвет авто: {self.color}"
 
 
 # выводим результат:
 
-car = Car('black', 'audi', '2022')
-car.turn_on()
-car.turn_off()
-car.get_year()
-car.get_type()
-car.get_color()
+car = Car('black', 'audi', 2022)
+print(car.turn_on())
+print(car.turn_off())
+print(car.get_year())
+print(car.get_type())
+print(car.get_color())

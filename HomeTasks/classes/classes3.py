@@ -19,15 +19,10 @@ class Student:
             print(i.score, i.subject.name)
 
     def get_average_score(self):
-        return sum(self.marks) / len(self.marks)
+        return sum(map(lambda m: m.score, self.marks)) / len(self.marks)
 
     def is_excellent(self):
-        for i in self.marks:
-            if i in ['1', '2', '3', '4', '5', '6', '7']:
-                return False
-            break
-        else:
-            return True
+        return all(map(lambda m: m.score > 7, self.marks))
 
 
 class Group:
@@ -67,9 +62,10 @@ student_2.set_mark(Mark(10, subject_python))
 student_2.set_mark(Mark(8, subject_java))
 student_3.set_mark(Mark(6, subject_python))
 student_3.set_mark(Mark(6, subject_java))
+student_1.set_mark(Mark(5, subject_python))
 
 for student in group.students:
     print(student.get_bio_info())
     student.statistics()
-#    print(student.get_average_score())
+    print(student.get_average_score())
     print(student_1.is_excellent())
