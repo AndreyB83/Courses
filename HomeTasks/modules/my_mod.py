@@ -15,3 +15,7 @@ def count_chars(name):
 
 def test(name):
     return print(f'Количество строк в файле: {count_lines(name)}; количество символов в файле: {count_chars(name)}')
+
+
+if __name__ == "__main__":
+    print(test('name'))
