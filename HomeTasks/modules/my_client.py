@@ -1,3 +1,3 @@
-from .my_mod import test
+from HomeTasks.modules.my_pkg.my_mod import test
 
-print(test('name'))
+test('test_file.txt')

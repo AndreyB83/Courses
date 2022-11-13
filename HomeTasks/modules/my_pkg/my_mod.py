@@ -18,4 +18,4 @@ def test(name):
 
 
 if __name__ == "__main__":
-    print(test('name'))
+    test('test_file1.txt')
