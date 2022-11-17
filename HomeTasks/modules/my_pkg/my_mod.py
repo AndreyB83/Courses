@@ -5,16 +5,16 @@
 
 def count_lines(name):
     with open(name) as file:
-        len(file.readlines())
+        return len(file.readlines())
 
 
 def count_chars(name):
     with open(name) as file:
-        len(file.read())
+        return len(file.read())
 
 
 def test(name):
-    return print(f'Количество строк в файле: {count_lines(name)}; количество символов в файле: {count_chars(name)}')
+    print(f'Количество строк в файле: {count_lines(name)}; количество символов в файле: {count_chars(name)}')
 
 
 if __name__ == "__main__":
